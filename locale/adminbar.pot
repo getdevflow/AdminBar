@@ -1,0 +1,96 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AdminBar\n"
+"POT-Creation-Date: 2024-12-12 07:59-0800\n"
+"PO-Revision-Date: 2024-12-08 09:13-0800\n"
+"Last-Translator: \n"
+"Language-Team: Joshua Parker\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: t__;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: locale\n"
+"X-Poedit-SearchPathExcluded-1: assets\n"
+
+#: AdminBarPlugin.php:37
+msgid "AdminBar"
+msgstr ""
+
+#: view/index.phtml:48
+msgid "Documentation"
+msgstr ""
+
+#: view/index.phtml:49
+msgid "Rest API Docs"
+msgstr ""
+
+#: view/index.phtml:50
+msgid "Submit Issue"
+msgstr ""
+
+#: view/index.phtml:74
+msgid "Visit Site"
+msgstr ""
+
+#: view/index.phtml:74
+msgid "Dashboard"
+msgstr ""
+
+#: view/index.phtml:78
+msgid "Manage Sites"
+msgstr ""
+
+#: view/index.phtml:79
+msgid "Manage Plugins"
+msgstr ""
+
+#: view/index.phtml:80
+msgid "Manage Users"
+msgstr ""
+
+#: view/index.phtml:81
+msgid "General Options"
+msgstr ""
+
+#: view/index.phtml:82
+msgid "Reading Options"
+msgstr ""
+
+#: view/index.phtml:108 view/index.phtml:113
+msgid "New"
+msgstr ""
+
+#: view/index.phtml:115
+msgid "New User"
+msgstr ""
+
+#: view/index.phtml:124
+msgid "Update Content"
+msgstr ""
+
+#: view/index.phtml:132
+msgid "Flush Cache"
+msgstr ""
+
+#: view/index.phtml:139
+#, php-format
+msgid "Hello %s"
+msgstr ""
+
+#: view/index.phtml:145
+msgid "Profile"
+msgstr ""
+
+#: view/index.phtml:151
+msgid "Switch back"
+msgstr ""
+
+#: view/index.phtml:157
+msgid "Logout"
+msgstr ""

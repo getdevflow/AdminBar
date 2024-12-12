@@ -1,0 +1,28 @@
+{
+  "name": "getdevflow/adminbar",
+  "description": "Adds a backend admin bar to a Devflow site.",
+  "type": "devflow-plugin",
+  "keywords": ["adminbar"],
+  "license": "GPL-2.0-only",
+  "authors": [
+    {
+      "name": "Joshua Parker",
+      "email": "joshua@joshuaparker.dev"
+    }
+  ],
+  "require": {
+    "php": ">=8.3",
+    "oomphinc/composer-installers-extender": "^2.0"
+  },
+  "extra": {
+    "installer-types": ["devflow-plugin"]
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "oomphinc/composer-installers-extender": true
+    }
+  }
+}
