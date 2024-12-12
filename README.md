@@ -22,9 +22,13 @@ Adds a backend admin bar to a Devflow site.
 * English
 * Spanish
 
-## Git Clone Installation
+## Composer Installation (Recommended for Devflow version 1.1.0 +)
+1. Start a new shell session.
+2. In the root of your install, run the following command ```composer require getdevflow/adminbar```.
+
+## Git Clone Installation (Recommended for Devflow version 1.0.0)
 1. Start a shell session and navigate to ```public/plugins``` folder.
-2. Run the following command: ```git clone https://github.com/getdevflow/AdminBar.git AdminBar```.
+2. Run the following command: ```git clone https://github.com/getdevflow/AdminBar.git adminbar```.
 
 ## Changelog
 

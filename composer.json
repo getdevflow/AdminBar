@@ -15,6 +15,7 @@
     "oomphinc/composer-installers-extender": "^2.0"
   },
   "extra": {
+    "installer-name": "AdminBar",
     "installer-types": ["devflow-plugin"]
   },
   "minimum-stability": "stable",
