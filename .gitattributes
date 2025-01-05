@@ -1,4 +1,5 @@
 assets/* linguist-vendored
+view/* linguist-vendored
 *.html linguist-detectable=false
 *.js linguist-detectable=false
 *.css linguist-detectable=false
