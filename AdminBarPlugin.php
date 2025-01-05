@@ -17,7 +17,6 @@ use ReflectionException;
 
 use function App\Shared\Helpers\cms_enqueue_css;
 use function App\Shared\Helpers\is_user_logged_in;
-use function App\Shared\Helpers\load_plugin_textdomain;
 use function App\Shared\Helpers\plugin_basename;
 use function App\Shared\Helpers\plugin_dir_path;
 use function App\Shared\Helpers\plugin_url;
@@ -37,7 +36,7 @@ final class AdminBarPlugin extends Plugin
             'name' => esc_html__(string: 'AdminBar', domain: 'adminbar'),
             'id' => 'adminbar',
             'author' => 'Joshua Parker',
-            'version' => '1.0.0',
+            'version' => '1.0.1',
             'description' => 'Adds an admin bar to Devflow site.',
             'basename' => plugin_basename(dirname(__FILE__)),
             'path' => plugin_dir_path(dirname(__FILE__)),
@@ -65,23 +64,8 @@ final class AdminBarPlugin extends Plugin
         if (!is_user_logged_in()) {
             return;
         }
-        Action::getInstance()->addAction('init', [$this, 'setLocale'], 5);
-        Action::getInstance()->addAction('init', [$this, 'render'], 5);
-        Action::getInstance()->addAction('cms_admin_head', [$this, 'enqueueCss'], 5);
-        Action::getInstance()->addAction('cms_head', [$this, 'enqueueCss'], 5);
-    }
-
-    /**
-     * @return void
-     * @throws ContainerExceptionInterface
-     * @throws NotFoundExceptionInterface
-     * @throws InvalidArgumentException
-     * @throws Exception
-     * @throws ReflectionException
-     */
-    public function setLocale(): void
-    {
-        load_plugin_textdomain(domain: $this->id(), pluginRelPath: $this->path() . 'locale');
+        Action::getInstance()->addAction('init', [$this, 'render'], 1);
+        Action::getInstance()->addAction('cms_admin_head', [$this, 'enqueueCss'], 1);
     }
 
     /**
