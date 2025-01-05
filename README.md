@@ -4,11 +4,11 @@ Adds a backend admin bar to a Devflow site.
 
 > __Requires__ Devflow Version: 1.0.0
 
-> __Tested Up To:__ 1.0.0
+> __Tested Up To:__ 1.2.0
 
 > __Requires PHP:__ 8.3+
 
-> __Stable Tag:__ 1.0.0
+> __Stable Tag:__ 1.0.1
 
 > __License:__ GPLv2-only
 
@@ -32,5 +32,9 @@ Adds a backend admin bar to a Devflow site.
 
 ## Changelog
 
+### 1.0.1
+- Removed old textdomain function
+- Updated locales
+- 
 ### 1.0.0
 - Initial addition
