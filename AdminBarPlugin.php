@@ -36,7 +36,7 @@ final class AdminBarPlugin extends Plugin
             'name' => esc_html__(string: 'AdminBar', domain: 'adminbar'),
             'id' => 'adminbar',
             'author' => 'Joshua Parker',
-            'version' => '1.0.1',
+            'version' => '2.0.0',
             'description' => 'Adds an admin bar to Devflow site.',
             'basename' => plugin_basename(dirname(__FILE__)),
             'path' => plugin_dir_path(dirname(__FILE__)),
@@ -77,8 +77,7 @@ final class AdminBarPlugin extends Plugin
         cms_enqueue_css(
             config: 'plugin',
             asset: $this->url() . '/assets/css/style.css',
-            minify: false,
-            pluginSlug: $this->id()
+            slug: $this->id()
         );
     }
 
